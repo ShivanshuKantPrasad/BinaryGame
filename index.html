@@ -15,7 +15,7 @@
 <body>
   <div class="container">
     <h1 align="center">Binary Game</h1>
-    <div id="instructions" class="alert alert-dismissible alert-success">
+    <div id="instructions" class="alert alert-success">
       <h4 class="alert-heading">Instructions</h4>
       <p class="mb-0">
         Flip the bits to form the correct binary representation for the give
@@ -39,6 +39,12 @@
       </div>
     </div>
     <div id="game" class="alert alert-success">
+
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+      </button>
+
+      <span align="center" id="timer">3:00</span>
 
       <div class="scoreboard">
         <div id="score">Current Score: 0</div>

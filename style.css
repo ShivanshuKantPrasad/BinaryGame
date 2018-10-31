@@ -79,5 +79,5 @@ td {
 .scoreboard {
   display: flex;
   flex-flow: column;
-  align-items: flex-end;
+  align-items: flex-start;
 }

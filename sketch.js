@@ -3,6 +3,7 @@ const timedBtn = document.querySelector("#Timed");
 const instructions = document.querySelector("#instructions");
 const game = document.querySelector('#game');
 const response = document.querySelector('#response');
+const close = document.querySelector('.close');
 
 const correct = document.querySelector('.correct');
 const wrong = document.querySelector('.wrong');
@@ -20,6 +21,18 @@ let currentNumber = 0;
 let isTimedMode = false;
 
 let timer = 0;
+
+close.addEventListener('click', () => {
+
+ if(isTimedMode) {
+   window.clearTimeout(timer);
+ }
+
+ currentScore = 0;
+ game.style.display = 'none';
+ instructions.style.display = 'block';
+
+});
 
 function playGame(isTimed) {
 
